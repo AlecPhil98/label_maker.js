@@ -29,6 +29,7 @@ let totalDue = mealafteraTax + tip;
 
 
 
+console.log(getMealCost(lunch))
 
 console.log(mealTotal.toFixed(2));
 console.log(tax.toFixed(2));
@@ -38,3 +39,5 @@ console.log(totalDue.toFixed(2));
 console.log(`This is the meal total $${mealTotal.toFixed(2)} 
 with a tax of $${tax.toFixed(2)} brings it to $${mealafteraTax.toFixed(2)} 
 with a tip of ${tip.toFixed(2)} it all comes out to $${totalDue.toFixed(2)}. ` )
+
+
