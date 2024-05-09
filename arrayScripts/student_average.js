@@ -17,22 +17,40 @@ function getStudentsName() {
 
         console.log(students[i].name);
 
+        let total = 0;
+
+        for (let j = 0; j < students[i].scores.length; j++) {
+
+
+            total += students[i].scores[j];
+            // console.log(students[i].scores[j])
+            //  console.log(total)
+            //  console.log(total/students[i].scores.length)
+        }
+        console.log(total/students[i].scores.length)
     }
-
-}
-function getAverage() {
-
-    let total = 0;
     
-    for (let i = 0; i < students.length; i++) {
+    
+    
 
-        total += students[i].scores;
-        console.log(students[i].scores)
-        
-    }
-
-      return total / students.length
 }
 
-getStudentsName(students);
-getAverage(students);
+getStudentsName();
+
+
+
+
+
+// function getAverage() {
+
+//     let total = 0;
+
+//     for (let i = 0; i < students.length; i++) {
+
+//         total += students[i];
+//          console.log(students[i].scores[i])
+
+//     }
+
+//     return total / students.length
+// }
