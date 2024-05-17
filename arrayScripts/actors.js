@@ -39,9 +39,22 @@ for (let i = 0; i < numActors; i++) {
     if(academyMembers[i].name.indexOf("Bob") === 0){
         console.log(`These name starts with Bob: ${academyMembers[i].name}`)
     }
-    if(academyMembers[i].films.indexOf("A") === 0){}
-}
+    let startsWithA = false 
+    for (let i =0; i < numActors;i++){
+        if(academyMembers[i].films.indexOf("A") === 0){
 
+            startsWithA = true;
+            break;
+        }
+        if(startsWithA){
+        console.log(`${academyMembers[i].name} star in films with films that start with A
+        }`)
+        }
+    }
+
+
+  
+}
 
 
 // let totalFilms = 0;
